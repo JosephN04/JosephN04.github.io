@@ -135,6 +135,16 @@ a.button:hover {
   color: var(--muted);
 }
 
+/* images */
+.profile-pic {
+  float: right;
+  width: 180px;
+  border-radius: 50%;
+  margin: 0 0 1rem 1rem;
+  border: 3px solid var(--accent);
+}
+
+
 /* Responsive */
 @media (max-width: 768px) {
   #content {
