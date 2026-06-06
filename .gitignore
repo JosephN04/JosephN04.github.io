@@ -1,0 +1,2 @@
+# Local Supabase credentials (optional — anon key is public-safe with RLS)
+# js/supabase-config.js

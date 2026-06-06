@@ -1,79 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Joseph Nabaty — Course projects in computer science, cybersecurity, and software development.">
   <title>Joseph Nabaty — Course Projects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 <div id="wrapper">
 
-<div id="header">
-      <a href="index.html" class="button">About Joseph</a>
-      <a href="Course Projects.html" class="button">Course Projects</a>
-      <a href="hobbies.html" class="button">Hobbies</a>
-      <a href="WeatherProject.html" class="button">Weather Project</a>
-      <a href="CalculatorProject.html" class="button">Calculator Project</a>
-</div>
+  <div id="header"></div>
 
-<div id="content">
-  <div id="leftEdge"></div>
-  <div id="rightEdge"></div>
+  <div id="content">
+    <div id="leftEdge"></div>
 
-  <div id="pageContent">
-    <h2>Course Projects</h2>
+    <div id="pageContent">
+      <h2 class="section-title">Course Projects</h2>
 
-    <h3>Personal Portfolio Website</h3>
-    <ul>
-      <li>Designed and built a responsive personal website using HTML and CSS.</li>
-      <li>Showcases projects, skills, and contact information.</li>
-      <li>Deployed using GitHub Pages with version control through Git.</li>
-      <li>Focused on clean UI design, accessibility, and mobile responsiveness. (currently still working on)</li>
-    </ul>
+      <div class="project-card">
+        <strong>Personal Portfolio Website</strong>
+        <ul>
+          <li>Designed and built a responsive personal website using HTML and CSS.</li>
+          <li>Showcases projects, skills, and contact information.</li>
+          <li>Deployed using GitHub Pages with version control through Git.</li>
+          <li>Focused on clean UI design, accessibility, and mobile responsiveness.</li>
+        </ul>
+      </div>
 
-    <h3>Currency Conversion Calculator</h3>
-    <ul>
-      <li>Developed an object-oriented Java application to convert global currencies.</li>
-      <li>Integrated a live exchange-rate API to retrieve up-to-date currency values.</li>
-      <li>Implemented input validation, exception handling, and modular class design.</li>
-    </ul>
+      <div class="project-card">
+        <strong>Currency Conversion Calculator</strong>
+        <ul>
+          <li>Developed an object-oriented Java application to convert global currencies.</li>
+          <li>Integrated a live exchange-rate API to retrieve up-to-date currency values.</li>
+          <li>Implemented input validation, exception handling, and modular class design.</li>
+        </ul>
+      </div>
 
-    <h3>CareGiver Management Application</h3>
-    <ul>
-      <li>Built a Python application to manage caregiver schedules and patient data.</li>
-      <li>Implemented file I/O for persistent data storage.</li>
-      <li>Focused on data organization, program structure, and usability.</li>
-    </ul>
+      <div class="project-card">
+        <strong>CareGiver Management Application</strong>
+        <ul>
+          <li>Built a Python application to manage caregiver schedules and patient data.</li>
+          <li>Implemented file I/O for persistent data storage.</li>
+          <li>Focused on data organization, program structure, and usability.</li>
+        </ul>
+      </div>
 
-    <h3>Weather Application</h3>
-    <ul>
-      <li>For sophomore project I helped create a web-based weather app using Java and a public weather API.</li>
-      <li>Displayed live weather data based on user location or city input, with a simple user-interface design.</li>
-      <li>Used asynchronous requests and dynamic DOM updates.</li>
-    </ul>
+      <div class="project-card">
+        <strong>Weather Application</strong>
+        <ul>
+          <li>Created a web-based weather app using Java and a public weather API.</li>
+          <li>Displayed live weather data based on user location or city input.</li>
+          <li>Used asynchronous requests and dynamic DOM updates.</li>
+        </ul>
+      </div>
 
-    <h3>Data Structures and Algorithms Projects</h3>
-    <ul>
-      <li>Implemented stacks, queues, linked lists, trees, and sorting algorithms in Java and Python.</li>
-      <li>Analyzed time and space complexity for various algorithms.</li>
-      <li>Applied algorithmic problem solving to coursework and programming assignments.</li>
-    </ul>
+      <div class="project-card">
+        <strong>Data Structures and Algorithms</strong>
+        <ul>
+          <li>Implemented stacks, queues, linked lists, trees, and sorting algorithms in Java and Python.</li>
+          <li>Analyzed time and space complexity for various algorithms.</li>
+          <li>Applied algorithmic problem solving to coursework and programming assignments.</li>
+        </ul>
+      </div>
 
-    <h3>Cybersecurity and Systems Labs</h3>
-    <ul>
-      <li>Worked with Linux and Windows systems to explore file permissions, processes, and networking.</li>
-      <li>Practiced basic security concepts such as authentication, encryption, and access control.</li>
-      <li>Gained exposure to command-line tools and system troubleshooting.</li>
-    </ul>
+      <div class="project-card">
+        <strong>Cybersecurity and Systems Labs</strong>
+        <ul>
+          <li>Worked with Linux and Windows systems to explore file permissions, processes, and networking.</li>
+          <li>Practiced basic security concepts such as authentication, encryption, and access control.</li>
+          <li>Gained exposure to command-line tools and system troubleshooting.</li>
+        </ul>
+      </div>
+    </div>
 
+    <div id="rightEdge"></div>
   </div>
-</div>
 
-<div id="footer">
-  <p>Last updated: 2026</p>
-</div>
+  <div id="footer"></div>
 
 </div>
+
+<script src="js/supabase-config.js"></script>
+<script src="js/site.js"></script>
+<script src="js/rating.js"></script>
 </body>
 </html>

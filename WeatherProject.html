@@ -1,67 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>Joseph Nabaty — Weather Project </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Joseph Nabaty — Java Weather Application project using external APIs.">
+  <title>Joseph Nabaty — Weather Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 <div id="wrapper">
 
-<div id="header">
-      <a href="index.html" class="button">About Joseph</a>
-      <a href="Course Projects.html" class="button">Course Projects</a>
-      <a href="hobbies.html" class="button">Hobbies</a>
-      <a href="WeatherProject.html" class="button">Weather Project</a>
-      <a href="CalculatorProject.html" class="button">Calculator Project</a>
-</div>
+  <div id="header"></div>
 
-<div id="content">
-  <div id="leftEdge"></div>
-  <div id="rightEdge"></div>
+  <div id="content">
+    <div id="leftEdge"></div>
 
-  <div id="pageContent">
-    <h2>Weather Application</h2>
+    <div id="pageContent">
+      <h2 class="section-title">Weather Application</h2>
 
-    <img src="images/p2-2.png" class="project-image" alt="Weather App Screenshot">
+      <img src="images/p2-2.png" class="project-image" alt="Weather App Screenshot">
 
-    <p>
-      This project is a Java-based Weather Application that retrieves and displays live weather data for a user-selected location.
-      The goal was to create a clean, user-friendly interface while learning how to integrate external APIs into a Java program.
-    </p>
+      <p>
+        This project is a Java-based Weather Application that retrieves and displays live weather data
+        for a user-selected location. The goal was to create a clean, user-friendly interface while
+        learning how to integrate external APIs into a Java program.
+      </p>
 
-    <h3>Overview</h3>
-    <ul>
-      <li>Allows users to search for a city and view current weather conditions.</li>
-      <li>Displays temperature, humidity, weather description, and general conditions.</li>
-      <li>Uses an external weather API to retrieve real-time data.</li>
-    </ul>
+      <h3>Overview</h3>
+      <ul>
+        <li>Allows users to search for a city and view current weather conditions.</li>
+        <li>Displays temperature, humidity, weather description, and general conditions.</li>
+        <li>Uses an external weather API to retrieve real-time data.</li>
+      </ul>
 
-    <h3>Technologies Used</h3>
-    <ul>
-      <li>Java</li>
-      <li>HTTP requests and JSON parsing</li>
-      <li>External Weather API</li>
-      <li>GitHub for version control</li>
-    </ul>
+      <h3>Technologies Used</h3>
+      <div class="skill-grid">
+        <span class="skill-badge">Java</span>
+        <span class="skill-badge">HTTP Requests</span>
+        <span class="skill-badge">JSON Parsing</span>
+        <span class="skill-badge">Weather API</span>
+        <span class="skill-badge">GitHub</span>
+      </div>
 
-    <h3>What I Learned</h3>
-    <ul>
-      <li>How to send HTTP requests and handle API responses in Java.</li>
-      <li>How to parse JSON data and map it into usable objects.</li>
-      <li>How to handle errors such as invalid city names or network issues.</li>
-      <li>How to design modular, readable, and maintainable code.</li>
-    </ul>
+      <h3>What I Learned</h3>
+      <ul>
+        <li>How to send HTTP requests and handle API responses in Java.</li>
+        <li>How to parse JSON data and map it into usable objects.</li>
+        <li>How to handle errors such as invalid city names or network issues.</li>
+        <li>How to design modular, readable, and maintainable code.</li>
+      </ul>
+    </div>
 
+    <div id="rightEdge"></div>
   </div>
-</div>
 
-<div id="footer">
-  <p>Last updated: 2026</p>
-</div>
+  <div id="footer"></div>
 
 </div>
+
+<script src="js/supabase-config.js"></script>
+<script src="js/site.js"></script>
+<script src="js/rating.js"></script>
 </body>
 </html>
-
