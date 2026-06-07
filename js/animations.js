@@ -38,7 +38,6 @@
     window.addEventListener("load", function () { revealInViewport(elements); });
   }
 
-  /* Force orb animations to always run regardless of OS reduced-motion setting */
   function forceOrbAnimations() {
     var orbs = document.querySelectorAll(".orb");
     orbs.forEach(function (orb) {
