@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Joseph Nabaty - Curro. A Java currency conversion calculator using live exchange rate APIs.">
+  <title>Calculator Project - Joseph Nabaty</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/theme.js"></script>
+</head>
+<body>
+
+<div class="page-shell">
+  <header id="site-header" class="site-header"></header>
+
+  <main>
+    <div class="container">
+
+      <div class="page-hero reveal">
+        <span class="section-label">Course Project</span>
+        <h1>Currency <span class="gradient">Calculator</span></h1>
+        <p>Java OOP application named Curro with real-time exchange rates from a public currency API.</p>
+      </div>
+
+      <div class="detail-layout">
+        <div class="detail-main reveal">
+          <img src="images/curro-currency-converter.png" alt="Currency Calculator App" class="detail-img">
+
+          <p>
+            This project kickstarted my Java programming skills, it is a currency conversion calculator that allows users to convert between
+            different world currencies using real-time exchange rates retrieved from an external API.
+            The application focuses on clean object-oriented design, accuracy, and usability.
+          </p>
+
+          <h2>Overview</h2>
+          <ul>
+            <li>Allows users to convert an amount from one currency to another.</li>
+            <li>Fetches up-to-date exchange rates from a public currency API.</li>
+            <li>Handles invalid input and API errors gracefully.</li>
+          </ul>
+
+          <h2>Challenges &amp; Solutions</h2>
+          <ul>
+            <li><strong>API integration:</strong> Learning how to make HTTP requests in Java and parse JSON responses into usable objects.</li>
+            <li><strong>Error handling:</strong> Implemented validation for user input and fallback messaging when the API is unavailable.</li>
+            <li><strong>Accuracy:</strong> Ensured conversion results are precise and properly formatted for readability.</li>
+          </ul>
+
+          <h2>What I Learned</h2>
+          <ul>
+            <li>How to integrate external services into a Java application.</li>
+            <li>How to design modular and maintainable object-oriented code.</li>
+            <li>How to debug network-related and data-format issues.</li>
+          </ul>
+        </div>
+
+        <aside class="detail-sidebar reveal reveal-delay-1">
+          <div class="glass-card">
+            <ul class="sidebar-list">
+              <li>
+                <strong>Technologies</strong>
+                Java, HTTP Requests, JSON Parsing, Currency API, Git/GitHub
+              </li>
+              <li>
+                <strong>Paradigm</strong>
+                Object-Oriented Programming
+              </li>
+              <li>
+                <strong>More Projects</strong>
+                <a href="projects.html">View all projects &rarr;</a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+
+      <div class="feedback-widget reveal" data-feedback-slug="calculator">
+        <h3>Rate the Currency Calculator</h3>
+        <p class="feedback-desc">Share your thoughts on this project.</p>
+        <div class="feedback-stars"></div>
+        <textarea class="feedback-textarea" placeholder="Your feedback (optional)..." maxlength="1000"></textarea>
+        <button type="button" class="feedback-submit link-fx">Submit Review</button>
+        <div class="feedback-stats"></div>
+        <div class="feedback-msg"></div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer id="site-footer" class="site-footer"></footer>
+</div>
+
+<script src="js/supabase-config.js"></script>
+<script src="js/site.js"></script>
+<script src="js/feedback.js"></script>
+<script src="js/interactions.js"></script>
+<script src="js/animations.js"></script>
+</body>
+</html>

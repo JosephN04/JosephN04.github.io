@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Joseph Nabaty - Java Weather Application project using external APIs.">
+  <title>Weather Project - Joseph Nabaty</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/theme.js"></script>
+</head>
+<body>
+
+<div class="page-shell">
+  <header id="site-header" class="site-header"></header>
+
+  <main>
+    <div class="container">
+
+      <div class="page-hero reveal">
+        <span class="section-label">Sophomore Project</span>
+        <h1>Weather <span class="gradient">Application</span></h1>
+        <p>Sep. 2024 – Dec. 2024 &middot; Java, HTTP requests, and a public weather API.</p>
+      </div>
+
+      <div class="detail-layout">
+        <div class="detail-main reveal">
+          <img src="images/p2-2.png" class="detail-img" alt="Weather App screenshot">
+
+          <p>
+            This project is a Java-based Weather Application that retrieves and displays live weather data
+            for a user-selected location. The goal was to create a clean, user-friendly interface while
+            learning how to integrate external APIs into a Java program.
+          </p>
+
+          <h2>Overview</h2>
+          <ul>
+            <li>Allows users to search for a city and view current weather conditions.</li>
+            <li>Displays temperature, humidity, weather description, and general conditions.</li>
+            <li>Uses an external weather API to retrieve real-time data.</li>
+            <li>Provides location-based weather alerts.</li>
+          </ul>
+
+          <h2>What I Learned</h2>
+          <ul>
+            <li>How to send HTTP requests and handle API responses in Java.</li>
+            <li>How to parse JSON data and map it into usable objects.</li>
+            <li>How to handle errors such as invalid city names or network issues.</li>
+            <li>How to design modular, readable, and maintainable code.</li>
+          </ul>
+        </div>
+
+        <aside class="detail-sidebar reveal reveal-delay-1">
+          <div class="glass-card">
+            <ul class="sidebar-list">
+              <li>
+                <strong>Technologies</strong>
+                Java, HTTP Requests, JSON Parsing, Weather API, GitHub
+              </li>
+              <li>
+                <strong>Timeline</strong>
+                Sep. 2024 – Dec. 2024
+              </li>
+              <li>
+                <strong>Course</strong>
+                Sophomore Project
+              </li>
+              <li>
+                <strong>More Projects</strong>
+                <a href="projects.html">View all projects &rarr;</a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+
+      <div class="feedback-widget reveal" data-feedback-slug="weather">
+        <h3>Rate the Weather App</h3>
+        <p class="feedback-desc">Share your thoughts on this project.</p>
+        <div class="feedback-stars"></div>
+        <textarea class="feedback-textarea" placeholder="Your feedback (optional)..." maxlength="1000"></textarea>
+        <button type="button" class="feedback-submit link-fx">Submit Review</button>
+        <div class="feedback-stats"></div>
+        <div class="feedback-msg"></div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer id="site-footer" class="site-footer"></footer>
+</div>
+
+<script src="js/supabase-config.js"></script>
+<script src="js/site.js"></script>
+<script src="js/feedback.js"></script>
+<script src="js/interactions.js"></script>
+<script src="js/animations.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Reviews, feedback, and Q&A for Joseph Nabaty's portfolio.">
+  <title>Reviews &amp; Q&amp;A - Joseph Nabaty</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/theme.js"></script>
+</head>
+<body>
+
+<div class="page-shell">
+  <header id="site-header" class="site-header"></header>
+
+  <main>
+    <div class="container">
+
+      <div class="page-hero reveal">
+        <span class="section-label">Community</span>
+        <h1>Reviews &amp; <span class="gradient">Q&amp;A</span></h1>
+        <p>Rate the portfolio, leave written feedback, and ask me anything. I answer questions here once reviewed.</p>
+      </div>
+
+      <section class="section reveal">
+        <div class="section-header">
+          <span class="section-label">Feedback</span>
+          <h2>Rate This Portfolio</h2>
+        </div>
+
+        <div class="feedback-widget" data-feedback-slug="portfolio">
+          <h3>How was your experience?</h3>
+          <p class="feedback-desc">Select a rating and optionally leave a comment. Your feedback helps me improve.</p>
+          <div class="feedback-stars"></div>
+          <textarea class="feedback-textarea" placeholder="Tell me what you liked, or what could be better..." maxlength="1000"></textarea>
+          <button type="button" class="feedback-submit link-fx">Submit Review</button>
+          <div class="feedback-stats"></div>
+          <div class="feedback-msg"></div>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-header">
+          <span class="section-label">Reviews</span>
+          <h2>What People Are Saying</h2>
+        </div>
+        <div id="all-reviews-list" class="reviews-list"></div>
+      </section>
+
+      <section class="section qa-section reveal">
+        <div class="section-header">
+          <span class="section-label">Questions</span>
+          <h2>Ask Me Anything</h2>
+        </div>
+
+        <div id="qa-list"></div>
+
+        <form id="qa-form" class="qa-form">
+          <h3 style="margin:0 0 0.75rem;font-size:1rem;">Submit a Question</h3>
+          <p style="margin:0 0 1rem;font-size:0.85rem;color:var(--muted);">
+            Questions are reviewed before being published with my answer.
+          </p>
+          <textarea class="feedback-textarea" name="question" placeholder="e.g. What tech stack did you use for Uniswap?" maxlength="500" required></textarea>
+          <button type="submit" class="feedback-submit link-fx">Ask Question</button>
+          <div class="feedback-msg qa-msg"></div>
+        </form>
+      </section>
+
+    </div>
+  </main>
+
+  <footer id="site-footer" class="site-footer"></footer>
+</div>
+
+<script src="js/supabase-config.js"></script>
+<script src="js/site.js"></script>
+<script src="js/feedback.js"></script>
+<script src="js/interactions.js"></script>
+<script src="js/animations.js"></script>
+</body>
+</html>

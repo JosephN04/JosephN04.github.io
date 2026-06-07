@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="UniSwap - A campus marketplace built for students, by students. Joseph Nabaty's CS capstone and Honors College thesis research project.">
+  <title>UniSwap - Capstone Project | Joseph Nabaty</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/theme.js"></script>
+</head>
+
+<body>
+
+  <div class="page-shell">
+    <header id="site-header" class="site-header"></header>
+
+    <main>
+      <div class="container">
+
+        <section class="flagship-hero reveal">
+          <span class="badge">Capstone &amp; Honors Thesis &middot; Fall 2025 – Spring 2026</span>
+          <div style="margin-bottom: 1.5rem;">
+            <img src="images/uniswap-hero.png" alt="UniSwap" style="max-width: 60%; height: auto; border-radius: 14px;">
+          </div>
+          <p class="lead" style="font-size:1.2rem;font-weight:500;color:var(--text);margin-bottom:0.5rem;">
+            A Campus Marketplace Built for Students, by Students
+          </p>
+          <p class="lead">
+            A full-stack marketplace platform for university students in campus housing to buy, sell,
+            and request items within their community - a safer, more convenient alternative to
+            Craigslist and Facebook Marketplace.
+          </p>
+          <div class="tech-strip">
+            <span>React</span><span>Vite</span><span>FastAPI</span><span>Python</span>
+            <span>PostgreSQL</span><span>SQLAlchemy</span><span>REST APIs</span>
+            <span>JWT</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>GitHub</span>
+          </div>
+          <div class="hero-actions" style="justify-content:center;margin-top:1.75rem;">
+            <a href="#features" class="btn btn-primary link-fx">Explore Features</a>
+            <a href="#architecture" class="btn btn-ghost link-fx">Architecture</a>
+            <a href="reviews.html" class="btn btn-ghost link-fx">Reviews</a>
+          </div>
+        </section>
+
+        <div class="project-meta-bar reveal">
+          <div class="meta-item">
+            <span class="meta-label">Project Type</span>
+            <span class="meta-value">Full-Stack Web App &middot; Capstone &middot; Thesis Research</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Team Size</span>
+            <span class="meta-value">4 Developers</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">My Role</span>
+            <span class="meta-value">Full-Stack Developer, System Designer, Researcher</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Status</span>
+            <span class="meta-value">Completed &middot; Future Expansion Planned</span>
+          </div>
+        </div>
+
+        <!-- Hero screenshot -->
+        <div class="img-slot reveal">
+          <div style="margin-bottom: 2rem;">
+            <img src="images/uniswap-hero-home.png" alt="UniSwap Platform Hero"
+              style="width: 70%; height: auto; border-radius: 14px; border: 1px solid var(--border);">
+          </div>
+        </div>
+
+        <section class="content-block reveal" id="overview">
+          <h2><span class="num">01</span> Project Overview</h2>
+          <p>
+            <strong>UniSwap</strong> is a full-stack marketplace platform designed specifically for university students
+            living in campus housing. The application allows students to buy, sell, and request items within their
+            campus community, creating a safer and more convenient alternative to general-purpose marketplaces such as
+            Craigslist and Facebook Marketplace.
+          </p>
+          <p>
+            The idea for UniSwap originated from conversations with students who expressed frustration with existing
+            platforms. Many found it difficult to sell items before moving out of their dorms, struggled to find
+            campus-specific listings, and felt uncomfortable meeting anonymous buyers and sellers online. The goal was
+            to create a marketplace tailored specifically to student life and the unique needs of residential campus
+            communities.
+          </p>
+          <p>
+            What began as a senior capstone project eventually expanded into a research initiative that became the
+            foundation of an <strong>Honors College Thesis</strong> investigating how localized online marketplaces can
+            improve safety, affordability, and sustainability within university environments.
+          </p>
+        </section>
+
+        <section class="content-block reveal">
+          <h2><span class="num">02</span> The Problem</h2>
+          <p>
+            Most online marketplaces are designed for large audiences and broad geographic regions. While these
+            platforms
+            provide access to a large number of users, they often create challenges for students:
+          </p>
+          <ul>
+            <li>Lack of campus-specific categories</li>
+            <li>Difficulty coordinating local transactions</li>
+            <li>Limited trust between anonymous users</li>
+            <li>Increased safety concerns</li>
+            <li>No features specifically designed for dorm communities</li>
+            <li>Inefficient ways to find common student necessities</li>
+          </ul>
+          <p>
+            Students frequently purchase furniture, mini-fridges, microwaves, textbooks, and other dorm essentials.
+            At the end of each semester, many of these items are discarded or sold through fragmented social media
+            groups.
+          </p>
+          <p>
+            UniSwap was designed to solve these problems through a centralized marketplace focused exclusively on
+            campus communities.
+          </p>
+        </section>
+
+        <section class="content-block reveal" id="research">
+          <h2><span class="num">03</span> Research Foundation</h2>
+          <p>
+            Unlike many academic software projects, UniSwap was not built solely as an application. The platform served
+            as the primary subject of an Honors College research study examining the following research question:
+          </p>
+          <blockquote class="research-quote">
+            How can a localized online marketplace improve safety, affordability, and sustainability in campus commerce
+            compared to existing platforms?
+          </blockquote>
+          <p>
+            The project combined software engineering practices with academic research methods. Existing marketplace
+            solutions were analyzed, students were consulted throughout development, and the final system was evaluated
+            based on its ability to address the concerns identified during the research process.
+          </p>
+          <p>
+            This experience provided valuable insight into how software development and academic research can work
+            together to solve real-world problems.
+          </p>
+        </section>
+
+        <section class="content-block reveal" id="process">
+          <h2><span class="num">04</span> Development Process</h2>
+
+          <h3 style="font-size:1.1rem;margin:1.5rem 0 0.75rem;color:var(--text);">User Research &amp; Planning</h3>
+          <p>Development began with direct conversations with students. Before any coding started, feedback was gathered
+            regarding:</p>
+          <ul>
+            <li>Current buying and selling habits</li>
+            <li>Frustrations with existing marketplaces</li>
+            <li>Safety concerns</li>
+            <li>Desired features</li>
+            <li>Campus-specific challenges</li>
+          </ul>
+          <p>Several themes emerged repeatedly:</p>
+          <ul>
+            <li>Students wanted a platform specifically for their university.</li>
+            <li>Many disliked the anonymity of Craigslist.</li>
+            <li>Existing solutions lacked organization.</li>
+            <li>Students wanted a way to <strong>request items</strong> rather than simply browse listings.</li>
+          </ul>
+          <p>These findings directly influenced the feature set and overall system design.</p>
+        </section>
+
+        <section class="content-block reveal" id="architecture">
+          <h2><span class="num">05</span> System Architecture</h2>
+          <p>UniSwap was designed as a modern three-tier web application architecture.</p>
+
+          <div class="card-grid-2" style="margin:1.25rem 0;">
+            <div class="glass-card">
+              <div class="skill-category">
+                <h3>Frontend</h3>
+                <div class="skill-tags">
+                  <span class="skill-tag">React</span>
+                  <span class="skill-tag">Vite</span>
+                  <span class="skill-tag">JavaScript</span>
+                  <span class="skill-tag">HTML</span>
+                  <span class="skill-tag">CSS</span>
+                </div>
+              </div>
+            </div>
+            <div class="glass-card">
+              <div class="skill-category">
+                <h3>Backend</h3>
+                <div class="skill-tags">
+                  <span class="skill-tag">FastAPI</span>
+                  <span class="skill-tag">Python</span>
+                  <span class="skill-tag">SQLAlchemy</span>
+                </div>
+              </div>
+            </div>
+            <div class="glass-card">
+              <div class="skill-category">
+                <h3>Database</h3>
+                <div class="skill-tags">
+                  <span class="skill-tag">PostgreSQL</span>
+                </div>
+              </div>
+            </div>
+            <div class="glass-card">
+              <div class="skill-category">
+                <h3>Authentication</h3>
+                <div class="skill-tags">
+                  <span class="skill-tag">JSON Web Tokens (JWT)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p>
+            The frontend communicates with the backend through RESTful APIs, while PostgreSQL manages persistent storage
+            for users, listings, messages, bookmarks, and transaction data.
+          </p>
+
+          <div class="img-slot reveal">
+            <div style="margin-bottom: 2rem;">
+              <img src="images/uniswap-ERD.png" alt="UniSwap Database Schema and Entity Relationship Diagram"
+                style="width: 55%; height: auto; border-radius: 14px; border: 1px solid var(--border);">
+            </div>
+            <p style="text-align: center; font-size: 0.9rem; color: var(--muted); margin-top: 0.5rem;">Entity
+              Relationship Diagram (ERD) - System Database Schema</p>
+          </div>
+        </section>
+
+        <section class="content-block reveal" id="features">
+          <h2><span class="num">06</span> Core Features</h2>
+
+          <div class="feature-section">
+            <h3>Secure User Authentication</h3>
+            <p>Users can create accounts, log in securely, and maintain persistent sessions through JWT authentication.
+            </p>
+            <ul>
+              <li>Account registration</li>
+              <li>Secure login</li>
+              <li>Session persistence</li>
+              <li>Profile management</li>
+              <li>Editable user information</li>
+            </ul>
+            <div class="img-slot">
+              <div style="margin-bottom: 2rem;">
+                <img src="images/uniswap-login.png" alt="UniSwap Login and Registration"
+                  style="width: 60%; height: auto; border-radius: 14px; border: 1px solid var(--border);">
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-section">
+            <h3>Marketplace Listings</h3>
+            <p>The listings system serves as the core of the platform. Users can create listings with:</p>
+            <ul>
+              <li>Title, category, price, description, location, availability status</li>
+              <li>Up to <strong>7 photos</strong> per listing</li>
+            </ul>
+            <p>Additional functionality includes search, category filtering, availability filtering, detailed listing
+              pages, and a multi-image carousel.</p>
+            <div class="img-slot">
+              <div style="margin-bottom: 2rem;">
+                <img src="images/uniswap-listings.png" alt="UniSwap Marketplace Listings"
+                  style="width: 60%; height: auto; border-radius: 14px; border: 1px solid var(--border);">
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-section">
+            <h3>Buyer Requests Board</h3>
+            <p>
+              One of UniSwap's most unique features is the <strong>Buyer Requests Board</strong>. Rather than waiting
+              for
+              someone to list an item, users can post requests describing what they are looking for - creating a reverse
+              marketplace model where sellers can proactively connect with buyers.
+            </p>
+            <p>Request fields include item title, category, budget, description, and location. This feature received
+              some of the strongest positive feedback during testing.</p>
+            <div class="img-slot">
+              <div style="margin-bottom: 2rem;">
+                <img src="images/uniswap-buyer-requests.png" alt="UniSwap Buyer Requests Board"
+                  style="width: 60%; height: auto; border-radius: 14px; border: 1px solid var(--border);">
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-section">
+            <h3>In-App Messaging</h3>
+            <p>The platform includes a built-in messaging system that allows buyers and sellers to communicate directly
+              without sharing personal contact information.</p>
+            <ul>
+              <li>Conversation management</li>
+              <li>Listing-based messaging</li>
+              <li>Buyer-request messaging</li>
+              <li>Photo sharing</li>
+              <li>Message history &amp; date grouping</li>
+              <li>Dark mode support</li>
+            </ul>
+            <div class="img-slot">
+              <div style="margin-bottom: 2rem;">
+                <img src="images/uniswap-messaging.png" alt="UniSwap In-App Messaging"
+                  style="width: 60%; height: auto; border-radius: 14px; border: 1px solid var(--border);">
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-section">
+            <h3>Bookmarks &amp; Purchase History</h3>
+            <p>Users can save listings for later through bookmarks and track completed purchases through their purchase
+              history.</p>
+            <ul>
+              <li>Total purchases &amp; total spending statistics</li>
+              <li>Saved listings tracking</li>
+              <li>Greater visibility into marketplace activity</li>
+            </ul>
+            <div class="img-slot">
+              <div style="margin-bottom: 2rem;">
+                <img src="images/uniswap-bookmarks.png" alt="UniSwap Bookmarks and Purchase History"
+                  style="width: 60%; height: auto; border-radius: 14px; border: 1px solid var(--border);">
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-section">
+            <h3>Light/Dark Mode Toggle</h3>
+            <p>
+              A feature that you could never go wrong with was dark mode. Many students use their devices
+              late at night, making dark mode a practical quality-of-life improvement. The preference persists between
+              sessions and applies across the entire platform, just like my website!.
+            </p>
+        </section>
+
+        <section class="content-block reveal">
+          <h2><span class="num">07</span> Technical Challenges</h2>
+
+          <h3 style="font-size:1.05rem;margin:1.25rem 0 0.5rem;color:var(--text);">Image Storage Redesign</h3>
+          <p>One of the largest technical challenges involved image management. The original design stored uploaded
+            images as files on the server. While this worked locally, it created privacy concerns when code was pushed
+            to GitHub because uploaded images became visible within repository history.</p>
+          <p><strong>Solution:</strong></p>
+          <ul>
+            <li>Images are converted to Base64 in the browser</li>
+            <li>Images are stored directly in PostgreSQL</li>
+            <li>No uploaded files are written to disk</li>
+          </ul>
+          <p>Although this increases database size, it improved privacy and simplified deployment during development.
+          </p>
+
+          <h3 style="font-size:1.05rem;margin:1.75rem 0 0.5rem;color:var(--text);">Database Evolution</h3>
+          <p>As new features were introduced, the database schema required multiple redesigns. Notable changes included:
+          </p>
+          <ul>
+            <li>Multi-image support</li>
+            <li>Buyer request functionality</li>
+            <li>Conversation restructuring</li>
+            <li>Schema migrations &amp; relationship redesigns</li>
+          </ul>
+          <p>These modifications required balancing flexibility, performance, and maintainability throughout
+            development.</p>
+
+          <h3 style="font-size:1.05rem;margin:1.75rem 0 0.5rem;color:var(--text);">Team Collaboration</h3>
+          <p>UniSwap was developed by a team of four computer science students as part of a senior capstone project. The
+            project followed a structured development process involving:</p>
+          <ul>
+            <li>Requirement gathering &amp; sprint planning</li>
+            <li>Feature assignments &amp; version control using GitHub</li>
+            <li>Peer code reviews &amp; collaborative testing</li>
+          </ul>
+          <p>
+            Working within a team environment provided experience similar to professional software development workflows
+            and reinforced the importance of communication, documentation, and project management.
+          </p>
+        </section>
+
+        <section class="content-block reveal">
+          <h2><span class="num">08</span> Results &amp; Impact</h2>
+          <p>The completed platform successfully implemented all planned feature areas:</p>
+          <ul class="results-checklist">
+            <li>User Authentication</li>
+            <li>Multi-Photo Listings</li>
+            <li>Buyer Requests</li>
+            <li>Messaging System</li>
+            <li>Bookmarks</li>
+            <li>Purchase History</li>
+            <li>User Profiles</li>
+            <li>Dark Mode</li>
+          </ul>
+          <p style="margin-top:1.25rem;">
+            Student feedback was overwhelmingly positive, particularly regarding buyer requests, campus-specific design,
+            multi-photo listings, dark mode, and safety compared to Craigslist. Users frequently commented that the
+            platform felt more trustworthy because it was designed around a shared campus community.
+          </p>
+        </section>
+
+        <section class="content-block reveal">
+          <h2><span class="num">09</span> Future Development</h2>
+          <p>While the project achieved its original goals, several opportunities for future expansion remain:</p>
+          <div class="feature-grid">
+            <div class="feature-tile">
+              <h4>Institutional Email Verification</h4>
+              <p>Require university email addresses to ensure campus-only access.</p>
+            </div>
+            <div class="feature-tile">
+              <h4>Cloud Image Storage</h4>
+              <p>Migrate image handling to AWS S3 or Cloudflare R2.</p>
+            </div>
+            <div class="feature-tile">
+              <h4>Real-Time Messaging</h4>
+              <p>Implement WebSockets for instant communication.</p>
+            </div>
+            <div class="feature-tile">
+              <h4>User Ratings &amp; Reviews</h4>
+              <p>Introduce reputation systems for buyers and sellers.</p>
+            </div>
+            <div class="feature-tile">
+              <h4>Mobile Application</h4>
+              <p>Develop native iOS and Android applications.</p>
+            </div>
+            <div class="feature-tile">
+              <h4>Public Deployment</h4>
+              <p>Deploy to production infrastructure and expand to multiple universities.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-block reveal">
+          <h2><span class="num">10</span> Skills Demonstrated</h2>
+          <div class="card-grid-2">
+            <div class="glass-card">
+              <div class="skill-category">
+                <h3>Software Engineering</h3>
+                <div class="skill-tags">
+                  <span class="skill-tag">Full-Stack Development</span>
+                  <span class="skill-tag">REST API Design</span>
+                  <span class="skill-tag">Database Design</span>
+                  <span class="skill-tag">Authentication Systems</span>
+                  <span class="skill-tag">Application Architecture</span>
+                </div>
+              </div>
+            </div>
+            <div class="glass-card">
+              <div class="skill-category">
+                <h3>Languages</h3>
+                <div class="skill-tags">
+                  <span class="skill-tag">Python</span>
+                  <span class="skill-tag">JavaScript</span>
+                  <span class="skill-tag">SQL</span>
+                  <span class="skill-tag">HTML</span>
+                  <span class="skill-tag">CSS</span>
+                </div>
+              </div>
+            </div>
+            <div class="glass-card">
+              <div class="skill-category">
+                <h3>Frameworks &amp; Tools</h3>
+                <div class="skill-tags">
+                  <span class="skill-tag">React</span>
+                  <span class="skill-tag">FastAPI</span>
+                  <span class="skill-tag">PostgreSQL</span>
+                  <span class="skill-tag">SQLAlchemy</span>
+                  <span class="skill-tag">GitHub</span>
+                  <span class="skill-tag">VS Code</span>
+                </div>
+              </div>
+            </div>
+            <div class="glass-card">
+              <div class="skill-category">
+                <h3>Research &amp; Analysis</h3>
+                <div class="skill-tags">
+                  <span class="skill-tag">User Research</span>
+                  <span class="skill-tag">Requirements Gathering</span>
+                  <span class="skill-tag">Data Analysis</span>
+                  <span class="skill-tag">Academic Research</span>
+                  <span class="skill-tag">Technical Writing</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-block reveal">
+          <h2><span class="num">11</span> Project Reflection</h2>
+          <p>
+            UniSwap became much more than a classroom assignment. It provided the opportunity to design, build, and
+            evaluate a real-world software solution while simultaneously conducting academic research through an
+            Honors College Thesis. The project demonstrated how software engineering can be used to address practical
+            challenges within a specific community and highlighted the value of combining technical development with
+            user-centered research.
+          </p>
+          <p>
+            The experience strengthened skills in full-stack development, database design, system architecture,
+            teamwork,
+            and research methodology while producing a platform that addresses a meaningful problem faced by students
+            on college campuses.
+          </p>
+
+          <div class="project-links-bar">
+            <a href="https://github.com/JosephN04/UniSwap.git" class="btn btn-primary link-fx" id="github-link" title="View the GitHub repository">GitHub
+              Repository</a>
+          </div>
+        </section>
+
+        <!-- Project Demo Video -->
+        <section class="content-block reveal">
+          <h2 style="margin-bottom: 1.5rem;">Project Demo</h2>
+          <div
+            style="position: relative; width: 100%; max-width: 800px; margin: 0 auto; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 14px; border: 1px solid var(--border);">
+            <iframe
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; border-radius: 14px;"
+              src="https://youtu.be/IjbKc0DcHp4" title="UniSwap Project Demo"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <p style="text-align: center; font-size: 0.85rem; color: var(--muted); margin-top: 1rem;">
+            <em>3-minute speedrun video of the projects capabilities/features.</em>
+          </p>
+        </section>
+
+        <div class="feedback-widget reveal" data-feedback-slug="uniswap">
+          <h3>Rate UniSwap</h3>
+          <p class="feedback-desc">I'd love to hear your thoughts on this capstone project.</p>
+          <div class="feedback-stars"></div>
+          <textarea class="feedback-textarea" placeholder="Share your feedback (optional)..."
+            maxlength="1000"></textarea>
+          <button type="button" class="feedback-submit link-fx">Submit Review</button>
+          <div class="feedback-stats"></div>
+          <div class="feedback-msg"></div>
+        </div>
+
+        <p style="text-align:center;margin-top:2rem;">
+          <a href="reviews.html" class="btn btn-ghost link-fx">View all reviews &amp; Q&amp;A &rarr;</a>
+        </p>
+
+      </div>
+    </main>
+
+    <footer id="site-footer" class="site-footer"></footer>
+  </div>
+
+  <script src="js/supabase-config.js"></script>
+  <script src="js/site.js"></script>
+  <script src="js/feedback.js"></script>
+  <script src="js/interactions.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+
+</html>

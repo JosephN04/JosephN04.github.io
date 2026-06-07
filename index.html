@@ -1,122 +1,270 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Joseph Nabaty — Computer Science student focused on Cyber Security. Portfolio, projects, and experience.">
-  <title>Joseph Nabaty — Portfolio</title>
+  <meta name="description" content="Joseph Nabaty - Computer Science graduate focused on Cybersecurity and AI. Portfolio, projects, and experience.">
+  <title>Joseph Nabaty - Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/theme.js"></script>
 </head>
 <body>
-<div id="wrapper">
 
-  <div id="header"></div>
+<div class="page-shell">
+  <header id="site-header" class="site-header"></header>
 
-  <div id="content">
-    <div id="leftEdge"></div>
-
-    <div id="pageContent">
+  <main>
+    <div class="container">
 
       <section class="hero">
-        <div class="hero-text">
-          <h1>Joseph Nabaty</h1>
-          <p class="hero-tagline">Computer Science &middot; Cyber Security Focus</p>
-          <p class="hero-bio">
-            Motivated Computer Science student seeking internship and job opportunities.
-            Passionate about building clean, functional applications and continuously expanding
-            skills in programming, IT, and cybersecurity.
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <span class="pulse-dot"></span>
+            Open to opportunities
+          </div>
+          <h1>Hi, I'm <span class="gradient">Joseph Nabaty</span></h1>
+          <p class="hero-subtitle">
+            Recent Computer Science graduate focused on <strong>Cybersecurity &amp; AI</strong>.
+            I build full-stack and object-oriented applications, and I'm passionate about
+            scalable software and solving technical problems.
           </p>
-          <div class="contact-row">
-            <a href="tel:+12487034447" class="contact-chip">(248) 703-4447</a>
-            <a href="mailto:Jnabaty@oakland.edu" class="contact-chip">Jnabaty@oakland.edu</a>
-            <a href="https://www.linkedin.com/in/josephnabaty/" target="_blank" rel="noopener" class="contact-chip">LinkedIn</a>
-            <a href="https://github.com/JosephN04" target="_blank" rel="noopener" class="contact-chip">GitHub</a>
+          <div class="hero-actions">
+            <a href="projects.html" class="btn btn-primary link-fx">View All Projects</a>
+            <a href="assets/Nabaty-Joseph-Resume.pdf" download class="btn btn-ghost link-fx">Download Resume</a>
+          </div>
+          <div class="contact-chips">
+            <a href="tel:+12487034447" class="chip">(248) 703-4447</a>
+            <a href="mailto:josephnabaty@gmail.com" class="chip">josephnabaty@gmail.com</a>
+            <a href="mailto:Jnabaty@oakland.edu" class="chip">Jnabaty@oakland.edu</a>
+            <span class="chip">Bloomfield Hills, MI</span>
           </div>
         </div>
-        <img src="images/Linkedinprofilepic.png" class="profile-pic" alt="Joseph Nabaty profile photo">
-      </section>
-
-      <section class="section">
-        <h2 class="section-title">Education</h2>
-        <p>
-          <strong>Bachelor of Science in Computer Science</strong><br>
-          Oakland University &mdash; School of Engineering and Computer Science<br>
-          Rochester, MI &middot; Honors College &middot; Expected Graduation: May 2026
-        </p>
-      </section>
-
-      <section class="section">
-        <h2 class="section-title">Featured Projects</h2>
-
-        <div class="project-card">
-          <strong>Personal Portfolio Website</strong> &mdash; HTML/CSS, GitHub Pages
-          <p>Designed and deployed a responsive personal website to showcase projects, skills, and experience. Clean navigation, mobile-friendly layout, and modern UI styling with Git version control.</p>
-        </div>
-
-        <div class="project-card">
-          <strong>Currency Conversion Calculator</strong> &mdash; Java, APIs
-          <p>Object-oriented Java application converting global currencies using real-time exchange rates. Includes error handling, modular class design, and input validation.</p>
-        </div>
-
-        <div class="project-card">
-          <strong>CareGiver Application</strong> &mdash; Python
-          <p>Python-based application managing caregiver schedules, patient information, and task tracking with file I/O and structured data organization.</p>
-        </div>
-
-        <div class="project-card">
-          <strong>Weather Application</strong> &mdash; JavaScript, API
-          <p>Web application retrieving and displaying live weather data via a public API with asynchronous requests and dynamic DOM updates.</p>
+        <div class="hero-visual">
+          <div class="avatar-ring">
+            <img src="images/Linkedinprofilepic.png" alt="Joseph Nabaty profile photo">
+          </div>
         </div>
       </section>
 
-      <section class="section">
-        <h2 class="section-title">Experience</h2>
-        <ul>
-          <li>
-            <strong>Technical &amp; IT Support (Academic / Personal)</strong> &mdash;
-            Provided software installation, troubleshooting, OS configuration, and account assistance.
-            Gained experience communicating technical concepts to non-technical users.
-          </li>
-          <li>
-            <strong>Systems &amp; Networking Exposure</strong> &mdash;
-            Hands-on work with Windows, Linux, and macOS. Familiar with file systems, permissions,
-            command-line tools, and basic networking (IP addressing, connectivity troubleshooting).
-          </li>
-        </ul>
+      <section class="section reveal">
+        <div class="stats-row">
+          <div class="stat-card">
+            <span class="stat-value">9+</span>
+            <span class="stat-label">Honors &amp; Awards</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value">20+</span>
+            <span class="stat-label">Technical Skills</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value">9+</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value">3</span>
+            <span class="stat-label">Languages Spoken</span>
+          </div>
+        </div>
       </section>
 
-      <section class="section">
-        <h2 class="section-title">Technical Skills</h2>
-        <div class="skill-grid">
-          <span class="skill-badge">Java</span>
-          <span class="skill-badge">Python</span>
-          <span class="skill-badge">C / C++</span>
-          <span class="skill-badge">JavaScript</span>
-          <span class="skill-badge">SQL</span>
-          <span class="skill-badge">HTML &amp; CSS</span>
-          <span class="skill-badge">Git / GitHub</span>
-          <span class="skill-badge">REST APIs</span>
-          <span class="skill-badge">OOP</span>
-          <span class="skill-badge">Data Structures</span>
-          <span class="skill-badge">Cybersecurity</span>
-          <span class="skill-badge">Linux / Windows / macOS</span>
+      <section class="section reveal">
+        <div class="section-header">
+          <span class="section-label">Education</span>
+          <h2>Academic Background</h2>
+        </div>
+        <div class="glass-card">
+          <h3 style="margin:0 0 0.35rem;font-size:1.1rem;">B.S. in Computer Science, Honors College</h3>
+          <p style="margin:0 0 0.75rem;color:var(--accent);font-size:0.88rem;font-weight:500;">
+            Oakland University, Rochester, MI &middot; Sep. 2022 – May 2026
+          </p>
+          <p style="margin:0 0 1rem;color:var(--text-secondary);font-size:0.92rem;">
+            CS Department Honors GPA: 3.83
+          </p>
+          <div class="skill-category">
+            <h3>Relevant Coursework</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">OOP</span>
+              <span class="skill-tag">Data Structures</span>
+              <span class="skill-tag">Software Engineering</span>
+              <span class="skill-tag">Databases</span>
+              <span class="skill-tag">Networking</span>
+              <span class="skill-tag">Algorithms</span>
+              <span class="skill-tag">Computer Organization</span>
+              <span class="skill-tag">Parallel &amp; Distributed</span>
+              <span class="skill-tag">Operating Systems</span>
+              <span class="skill-tag">Capstone Project</span>
+              <span class="skill-tag">System Administration</span>
+              <span class="skill-tag">CompTIA Linux Pro</span>
+              <span class="skill-tag">Information Security</span>
+              <span class="skill-tag">Software Security</span>
+            </div>
+          </div>
+          <div class="skill-category" style="margin-top:1rem;">
+            <h3>Honors &amp; Leadership</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Honors College Graduate</span>
+              <span class="skill-tag">President's List</span>
+              <span class="skill-tag">Dean's List</span>
+              <span class="skill-tag">NHS</span>
+              <span class="skill-tag">Co-President, MEES</span>
+              <span class="skill-tag">ACM Member</span>
+              <span class="skill-tag">Competitive Programming</span>
+              <span class="skill-tag">GrizzHacks</span>
+              <span class="skill-tag">AIS Member</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-header">
+          <span class="section-label">Experience</span>
+          <h2>Work History</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item reveal reveal-delay-1">
+            <h3>Loan Partner</h3>
+            <div class="timeline-meta">Nations Mortgage LLC, Troy, MI &middot; Apr. 2026 – May 2026</div>
+            <ul>
+              <li>Managed documentation and workflow for mortgage operations.</li>
+              <li>Used CRM systems to track loan applications and financial records.</li>
+              <li>Coordinated between underwriters and clients to improve efficiency.</li>
+            </ul>
+          </div>
+          <div class="timeline-item reveal reveal-delay-2">
+            <h3>Bard Discoverer / End User Tester</h3>
+            <div class="timeline-meta">C Space Corp, Remote &middot; May 2023 – Aug. 2023</div>
+            <ul>
+              <li>Tested Google's AI tool (Bard) to identify design flaws and UI defects.</li>
+              <li>Submitted detailed functionality reports based on average user experience.</li>
+            </ul>
+          </div>
+          <div class="timeline-item reveal reveal-delay-3">
+            <h3>Sales Associate</h3>
+            <div class="timeline-meta">AEO Inc, Village of Rochester Hills &middot; Jul. 2022 – Dec. 2022</div>
+            <ul>
+              <li>Handled sales, returns, and customer navigation in a fast-paced retail environment.</li>
+            </ul>
+          </div>
+          <div class="timeline-item reveal">
+            <h3>Technical &amp; IT Support</h3>
+            <div class="timeline-meta">Academic / Personal</div>
+            <ul>
+              <li>Provided software installation, troubleshooting, OS configuration, and account assistance.</li>
+              <li>Gained experience communicating technical concepts to non-technical users.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-header">
+          <span class="section-label">Skills</span>
+          <h2>Technical Toolkit</h2>
+        </div>
+        <div class="card-grid-2">
+          <div class="glass-card">
+            <div class="skill-category">
+              <h3>Languages</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">C</span>
+                <span class="skill-tag">C++</span>
+                <span class="skill-tag">PHP</span>
+                <span class="skill-tag">HTML/CSS</span>
+              </div>
+            </div>
+          </div>
+          <div class="glass-card">
+            <div class="skill-category">
+              <h3>Tools &amp; Frameworks</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">GitHub</span>
+                <span class="skill-tag">VS Code</span>
+                <span class="skill-tag">Eclipse</span>
+                <span class="skill-tag">IntelliJ</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Microsoft Office</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">React.js</span>
+              </div>
+            </div>
+          </div>
+          <div class="glass-card">
+            <div class="skill-category">
+              <h3>Operating Systems</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Windows</span>
+                <span class="skill-tag">Linux</span>
+                <span class="skill-tag">macOS</span>
+              </div>
+            </div>
+          </div>
+          <div class="glass-card">
+            <div class="skill-category">
+              <h3>Spoken Languages</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Chaldean (Native)</span>
+                <span class="skill-tag">Spanish (Advanced)</span>
+                <span class="skill-tag">Arabic (Intermediate)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-header">
+          <span class="section-label">Highlights</span>
+          <h2>Featured Projects</h2>
+        </div>
+        <div class="card-grid">
+          <article class="glass-card project-card">
+            <img src="images/uniswap-hero.png" alt="UniSwap Campus Marketplace" class="project-img">
+            <h3>UniSwap</h3>
+            <div class="project-date">Jan. 2026 – May 2026 &middot; Capstone</div>
+            <p>Campus marketplace for students - full-stack React + FastAPI app with PostgreSQL, JWT auth, and Honors Thesis research.</p>
+            <div class="project-tags">
+              <span class="tag">React</span><span class="tag">FastAPI</span><span class="tag">PostgreSQL</span>
+            </div>
+            <a href="uniswap.html" class="card-link link-fx">Explore capstone &rarr;</a>
+          </article>
+          <article class="glass-card project-card">
+            <h3>Weather Application</h3>
+            <div class="project-date">Sep. 2024 – Dec. 2024</div>
+            <p>Java-based weather app with real-time API data and location-based alerts.</p>
+            <div class="project-tags">
+              <span class="tag">Java</span><span class="tag">API</span>
+            </div>
+            <a href="weather-project.html" class="card-link link-fx">View details &rarr;</a>
+          </article>
+          <article class="glass-card project-card">
+            <h3>Currency Calculator</h3>
+            <p>Java OOP app with live exchange rates, validation, and modular design.</p>
+            <div class="project-tags">
+              <span class="tag">Java</span><span class="tag">API</span>
+            </div>
+            <a href="calculator-project.html" class="card-link link-fx">View details &rarr;</a>
+          </article>
         </div>
       </section>
 
     </div>
+  </main>
 
-    <div id="rightEdge"></div>
-  </div>
-
-  <div id="footer"></div>
-
+  <footer id="site-footer" class="site-footer"></footer>
 </div>
 
 <script src="js/supabase-config.js"></script>
 <script src="js/site.js"></script>
-<script src="js/rating.js"></script>
+<script src="js/feedback.js"></script>
+<script src="js/interactions.js"></script>
+<script src="js/animations.js"></script>
 </body>
 </html>

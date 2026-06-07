@@ -1,81 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Joseph Nabaty — Hobbies and interests including sports, music, puzzles, and more.">
-  <title>Joseph Nabaty — Hobbies</title>
+  <meta name="description" content="Joseph Nabaty - Hobbies and interests including sports, music, puzzles, and more.">
+  <title>Hobbies - Joseph Nabaty</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/theme.js"></script>
 </head>
 <body>
-<div id="wrapper">
 
-  <div id="header"></div>
+<div class="page-shell">
+  <header id="site-header" class="site-header"></header>
 
-  <div id="content">
-    <div id="leftEdge"></div>
+  <main>
+    <div class="container">
 
-    <div id="pageContent">
-      <h2 class="section-title">Hobbies &amp; Interests</h2>
+      <div class="page-hero reveal">
+        <span class="section-label">Beyond Code</span>
+        <h1>Hobbies &amp; <span class="gradient">Interests</span></h1>
+        <p>What I do when I'm not building software - staying active, creative, and connected.</p>
+      </div>
 
-      <ul class="hobby-list">
-        <li>
+      <div class="hobby-grid">
+
+        <article class="glass-card hobby-card reveal">
           <img src="images/h3.png" alt="Playing basketball">
           <div>
-            <strong>Sports &amp; Fitness</strong>
-            I enjoy playing basketball at the recreation center with friends to stay active,
-            build teamwork, and relieve stress.
+            <h3>Sports &amp; Fitness</h3>
+            <p>I enjoy playing basketball at the recreation center with friends to stay active, build teamwork, and relieve stress.</p>
           </div>
-        </li>
+        </article>
 
-        <li>
+        <article class="glass-card hobby-card reveal reveal-delay-1">
           <img src="images/h2.png" alt="Playing the piano">
           <div>
-            <strong>Music (Piano)</strong>
-            I play the piano at home during my free time, which helps improve my focus, creativity,
-            and discipline.
+            <h3>Music (Piano)</h3>
+            <p>I play the piano at home during my free time, which helps improve my focus, creativity, and discipline.</p>
           </div>
-        </li>
+        </article>
 
-        <li>
+        <article class="glass-card hobby-card reveal reveal-delay-2">
           <img src="images/h1.png" alt="Solving puzzles">
           <div>
-            <strong>Puzzles &amp; Problem Solving</strong>
-            I enjoy solving Rubik's Cubes and large 1,000-piece jigsaw puzzles,
-            which strengthens logical thinking and patience.
+            <h3>Puzzles &amp; Problem Solving</h3>
+            <p>I enjoy solving Rubik's Cubes and large 1,000-piece jigsaw puzzles, which strengthens logical thinking and patience.</p>
           </div>
-        </li>
+        </article>
 
-        <li>
+        <article class="glass-card hobby-card reveal">
           <img src="images/h4.png" alt="Hanging out with friends">
           <div>
-            <strong>Socializing</strong>
-            I enjoy hanging out with friends and meeting new people to build communication skills.
+            <h3>Socializing</h3>
+            <p>I enjoy hanging out with friends and meeting new people to build communication skills.</p>
           </div>
-        </li>
+        </article>
 
-        <li>
+        <article class="glass-card hobby-card reveal reveal-delay-1">
           <img src="images/h5.png" alt="Playing video games">
           <div>
-            <strong>Gaming</strong>
-            I occasionally play video games to relax and enjoy strategic challenges.
+            <h3>Gaming</h3>
+            <p>I occasionally play video games to relax and enjoy strategic challenges.</p>
           </div>
-        </li>
-      </ul>
+        </article>
+
+      </div>
     </div>
+  </main>
 
-    <div id="rightEdge"></div>
-  </div>
-
-  <div id="footer"></div>
-
+  <footer id="site-footer" class="site-footer"></footer>
 </div>
 
 <script src="js/supabase-config.js"></script>
 <script src="js/site.js"></script>
-<script src="js/rating.js"></script>
+<script src="js/feedback.js"></script>
+<script src="js/interactions.js"></script>
+<script src="js/animations.js"></script>
 </body>
 </html>

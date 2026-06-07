@@ -2,11 +2,14 @@
   "use strict";
 
   var NAV_LINKS = [
-    { href: "index.html", label: "About" },
-    { href: "Course Projects.html", label: "Projects" },
+    { href: "index.html", label: "Home" },
+    { href: "about.html", label: "About Site" },
+    { href: "projects.html", label: "Projects" },
     { href: "hobbies.html", label: "Hobbies" },
-    { href: "WeatherProject.html", label: "Weather" },
-    { href: "CalculatorProject.html", label: "Calculator" }
+    { href: "uniswap.html", label: "Uniswap", featured: true },
+    { href: "weather-project.html", label: "Weather" },
+    { href: "calculator-project.html", label: "Calculator" },
+    { href: "reviews.html", label: "Reviews" }
   ];
 
   function currentPage() {
@@ -15,72 +18,77 @@
     return page || "index.html";
   }
 
+  function buildBgEffects() {
+    if (document.querySelector(".bg-effects")) return;
+    var bg = document.createElement("div");
+    bg.className = "bg-effects";
+    bg.setAttribute("aria-hidden", "true");
+    bg.innerHTML =
+      '<div class="orb orb-1"></div>' +
+      '<div class="orb orb-2"></div>' +
+      '<div class="orb orb-3"></div>' +
+      '<div class="grid-overlay"></div>';
+    document.body.insertBefore(bg, document.body.firstChild);
+  }
+
   function initNav() {
-    var header = document.getElementById("header");
+    var header = document.getElementById("site-header");
     if (!header) return;
 
     var active = currentPage();
+    var navLinksHtml = NAV_LINKS.map(function (item) {
+      var cls = "nav-link link-fx";
+      if (item.href === active) cls += " active";
+      if (item.featured) cls += " nav-featured";
+      return '<a href="' + item.href + '" class="' + cls + '">' + item.label + '</a>';
+    }).join("");
 
-    var inner = document.createElement("div");
-    inner.className = "nav-inner";
+    header.innerHTML =
+      '<div class="container">' +
+        '<div class="nav-bar">' +
+          '<a href="index.html" class="nav-logo link-fx">Joseph <em>Nabaty</em></a>' +
+          '<div class="nav-right">' +
+            '<button class="theme-toggle" type="button" aria-label="Toggle theme">' +
+              '<span class="toggle-icon icon-moon" aria-hidden="true">&#9790;</span>' +
+              '<span class="toggle-icon icon-sun" aria-hidden="true">&#9728;</span>' +
+            '</button>' +
+            '<button class="nav-burger" type="button" aria-label="Toggle navigation">&#9776;</button>' +
+          '</div>' +
+          '<nav class="nav-links" aria-label="Main navigation">' + navLinksHtml + '</nav>' +
+        '</div>' +
+      '</div>';
 
-    var logo = document.createElement("a");
-    logo.href = "index.html";
-    logo.className = "site-logo";
-    logo.innerHTML = "Joseph Nabaty <span>/ Portfolio</span>";
-
-    var toggle = document.createElement("button");
-    toggle.className = "nav-toggle";
-    toggle.setAttribute("aria-label", "Toggle navigation");
-    toggle.textContent = "\u2630";
-
-    var links = document.createElement("nav");
-    links.className = "nav-links";
-    links.setAttribute("aria-label", "Main navigation");
-
-    NAV_LINKS.forEach(function (item) {
-      var a = document.createElement("a");
-      a.href = item.href;
-      a.className = "button" + (item.href === active ? " active" : "");
-      a.textContent = item.label;
-      links.appendChild(a);
+    header.querySelector(".nav-burger").addEventListener("click", function () {
+      header.querySelector(".nav-links").classList.toggle("open");
     });
 
-    toggle.addEventListener("click", function () {
-      links.classList.toggle("open");
-    });
-
-    inner.appendChild(logo);
-    inner.appendChild(toggle);
-    inner.appendChild(links);
-
-    header.innerHTML = "";
-    header.appendChild(inner);
+    if (window.bindThemeToggles) window.bindThemeToggles();
   }
 
   function initFooter() {
-    var footer = document.getElementById("footer");
+    var footer = document.getElementById("site-footer");
     if (!footer) return;
 
     footer.innerHTML =
-      '<div class="footer-inner">' +
-        '<div class="rating-section">' +
-          '<h3>Rate this portfolio</h3>' +
-          '<p class="rating-subtitle">How was your experience? Your feedback helps me improve.</p>' +
-          '<div id="star-rating" class="star-rating" role="group" aria-label="Star rating"></div>' +
-          '<div id="rating-stats" class="rating-stats"></div>' +
-          '<div id="rating-message" class="rating-message"></div>' +
-        '</div>' +
-        '<p class="footer-meta">' +
-          'Last updated: 2026 &middot; ' +
+      '<div class="container">' +
+        '<p class="footer-bottom" style="padding:1.5rem 0;">' +
+          '<a href="about.html">About This Site</a> &middot; ' +
+          '<a href="reviews.html">Reviews &amp; Q&amp;A</a> &middot; ' +
+          '<a href="assets/Nabaty-Joseph-Resume.pdf" download>Resume (PDF)</a> &middot; ' +
           '<a href="https://github.com/JosephN04" target="_blank" rel="noopener">GitHub</a> &middot; ' +
           '<a href="https://www.linkedin.com/in/josephnabaty/" target="_blank" rel="noopener">LinkedIn</a>' +
+          '<br><span style="margin-top:0.5rem;display:inline-block;">&copy; 2026 Joseph Nabaty</span>' +
         '</p>' +
       '</div>';
   }
 
   document.addEventListener("DOMContentLoaded", function () {
+    buildBgEffects();
     initNav();
     initFooter();
   });
+
+  if (document.readyState !== "loading") {
+    buildBgEffects();
+  }
 })();
